@@ -1,0 +1,57 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@null"
+    android:elevation="40sp"
+    android:layout_centerInParent="true"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Edit Tasks"
+            android:textSize="18dp"
+            android:textColor="@android:color/holo_red_dark"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dbEditTaskNameEditText"
+            android:hint="Course Name"
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dbEditTaskDescEditText"
+            android:hint="Course Description"
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dbEditTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Edit"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>
